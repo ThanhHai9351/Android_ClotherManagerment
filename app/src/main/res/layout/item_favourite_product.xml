@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F6E2E2">
+
+    <ImageView
+        android:id="@+id/img_product_favourite"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:padding="8dp"
+        android:src="@drawable/product" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="8dp"
+            android:id="@+id/tw_name_favourite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="Bluebell Hand Block Tiered" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/tw_price_favourite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$80"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginRight="20dp"/>
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="(2k Review)"
+                android:drawableLeft="@drawable/star"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4CAF50"
+            android:text="FREE Delivery" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+
+            <TextView
+                android:id="@+id/img_remove_favourite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="12dp"
+                android:drawableLeft="@drawable/bin"
+                android:text="Remove"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

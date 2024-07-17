@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF5EB"
+    tools:context=".UI.Register">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/profile_image"
+                android:layout_width="400dp"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/familyclother" />
+
+            <TextView
+                android:id="@+id/welcome_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profile_image"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="Create Your Account"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/welcome_back"
+                android:layout_centerHorizontal="true"
+                android:text="Welcome Back! Please Enter Your Details"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/edt_name_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/welcome_back"
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:hint="Name"
+                android:padding="10dp"
+                android:textColorHint="#AEA8A8"
+                android:textColor="@color/black"
+                android:background="@drawable/custom_textfield"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/edt_username_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edt_name_register"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:hint="Username"
+                android:padding="10dp"
+                android:textColorHint="#AEA8A8"
+                android:textColor="@color/black"
+                android:background="@drawable/custom_textfield"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/edt_password_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edt_username_register"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:hint="Password"
+                android:padding="10dp"
+                android:textColorHint="#AEA8A8"
+                android:textColor="@color/black"
+                android:background="@drawable/custom_textfield"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/edt_confirm_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edt_password_register"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/custom_textfield"
+                android:hint="Confirm password"
+                android:inputType="textPassword"
+                android:textColorHint="#AEA8A8"
+                android:textColor="@color/black"
+                android:padding="10dp" />
+
+            <CheckBox
+                android:id="@+id/cb_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edt_confirm_password"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:text="I agree to all Term, Privacy and Fees" />
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cb_confirm"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/custom_button_rounded"
+                android:drawableLeft="@drawable/icon_button"
+                android:padding="5dp"
+                android:text="Sign Up"
+                android:textColor="#FFF" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
